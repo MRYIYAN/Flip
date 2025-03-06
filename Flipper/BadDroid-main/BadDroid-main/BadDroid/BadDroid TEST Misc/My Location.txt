@@ -1,0 +1,34 @@
+REM Abre Google Maps y muestra tu ubicación actual
+
+REM Abre Google Maps
+GUI m
+DELAY 1500
+
+REM Asegúrate de que Google Maps esté completamente cargado
+DELAY 2000
+
+REM Navega a la ubicación actual (los comandos pueden variar dependiendo del diseño de la aplicación)
+REM Este script está basado en la interfaz de usuario estándar de Google Maps
+
+REM Abre el menú de la aplicación (si es necesario)
+TAB
+DELAY 500
+
+REM Si el botón de ubicación actual no está visible, usa comandos para acceder a él
+RIGHT
+DELAY 500
+DOWN
+DELAY 500
+ENTER
+DELAY 2000
+
+REM Si es necesario, desplázate para encontrar la opción de ubicación actual
+REPEAT 3
+    DOWN
+    DELAY 500
+END REPEAT
+
+REM Selecciona la opción de ubicación actual (ajusta según la disposición)
+ENTER
+
+REM Fin del Script

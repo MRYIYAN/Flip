@@ -1,0 +1,13 @@
+REM Author: IanP
+REM Description: Script tu shutdown pc
+REM Version: 1.5
+REM Objective: Windows11
+REM Compatibility: Flipper Zero and DuckyScript devices
+DELAY 600
+GUI r
+DELAY 600
+STRING cmd
+ENTER
+DELAY 1200
+STRING shutdown -s -t 10
+ENTER

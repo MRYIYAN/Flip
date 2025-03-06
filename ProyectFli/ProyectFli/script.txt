@@ -1,0 +1,14 @@
+#!flipper-zero
+# Enviar datos y script a través del UDP del ESP32
+# Se asume que el ESP32 está escuchando en la IP y puerto especificados en el script  "ESP32"
+# El script abre un powershell que indica al ordenador abrir un enlace de YT
+UdpSend "YOUR_ESP32_IP" "12345" "DELAY 500\nGUI r\nDELAY 500\nString powershell $vol =new-object-cm wscript.shell ; For($i = 0; $i -le 50; ~i++){$vol.SendKeys([char]175)}; start
+\"https://youtu.be/s_DQM-1atK0\" ; \nENTER\nDELAY 8000\nString f" 
+
+DELAY 500
+GUI r 
+DELAY 500
+STRING powershell $vol=new-object -com wscript.shell ; For ($i=0; $i -le 50; $i++){~vol.SendKeys([char]175)}; start "ttps://youtu.be/s_DQM-1atK0\" ;
+ENTER 
+DELAY 8000
+String f\ 

